@@ -2,6 +2,19 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Git Workflow
+
+After completing any meaningful unit of work — a new feature, a bug fix, a content change — commit and push immediately. Never let work accumulate uncommitted.
+
+```powershell
+Set-Location "C:\Users\HP\Downloads\retro-shooter-game"
+git add <file>
+git commit -m "short present-tense summary of what changed"
+git push
+```
+
+Commit message rules: one line, present tense, lowercase, specific (e.g. `add shield power-up to level 3`, not `update stuff`). Include a blank line and a short body if the why is non-obvious.
+
 ## Running the Games
 
 Both files are self-contained single-page HTML5 apps — no build step, no dependencies.
